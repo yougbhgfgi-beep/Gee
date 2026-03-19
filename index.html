@@ -1199,7 +1199,7 @@
 
                         {!gameOver && (
                             <div className="absolute bottom-8 text-white/40 font-premium tracking-widest uppercase text-sm animate-pulse">
-                                {lang === 'ar' ? 'وصل النجوم ببعضها...' : 'Connect the stars...'}
+                                {lang === 'ar' ? 'وصلي النجوم ببعضها...' : 'Connect the stars...'}
                             </div>
                         )}
                     </div>
@@ -1262,7 +1262,7 @@
         const i18n = {
             ar: {
                 nav: { memories: "ذكرياتنا", why: "ليه بحبك" },
-                hero: { subtitle: "قصة حب مكتوبة للابد بمناسبة العيد ✨", btn: "افتح الهدية 🎁" },
+                hero: { subtitle: "قصة حب مكتوبة للابد بمناسبة العيد ✨", btn: "افتحي مفاجأتك يا روحي 🎁💖" },
                 login: { title: "عيد سعيد 🎉", day: "الايام", month: "الشهور", year: "السنين", btn: "دخول 💖", quote: "كل عيد و انتِ أقرب لقلبي..." },
                 meter: { title: "مقياس حبي ليكي", label: "نسبة الحب", calc: "جاري حساب كمية الحب...", result: "النتيجة: حب لا نهائي <span class='result-heart'>💜</span> ∞", hint: "اضغطي عشان تشوفي النتيجة" },
                 timeline: { 
@@ -1275,7 +1275,7 @@
                 reasons: { title: "ليه بحبك؟ 🤔💜", r1: { t: "حنيتك", d: "أحن وأطيب قلب في الدنيا، بتمسحي دمعتي قبل ما تنزل." }, r2: { t: "أماني", d: "معاكي بحس إني مسنود على جبل، ولا حاجة تقدر تكسرني." }, r3: { t: "ضحكتك", d: "لما بتضحكي الدنيا كلها بتضحكلي، هي علاجي ودوائي." }, r4: { t: "قلبك الأبيض", d: "أنقى وأطيب قلب، بيسامح وبيحب بصدق." }, r5: { t: "عيونك", d: "بشوف فيهم مستقبلي." }, r6: { t: "وجودك", d: "كفاية بس إنك موجودة، ده بيخلي الحياة ليها طعم ولون." } },
                 clock: { start: "الأيام اللي قضيناها (8/7/2024)", year: "سنة", month: "شهر", day: "يوم", hour: "ساعة", min: "دقيقة", sec: "ثانية" },
                 footer: { final: "The Final Scene" },
-                envelope: { mylove: "حبيبتي Gee 💜", enter: "دخول عالمنا 💜", hint: "انقر لفتح الرسالة 💌", message: "رسالة حب ليكي بمناسبة العيد..." },
+                envelope: { mylove: "حبيبتي Gee 💜", enter: "دخول عالمنا 💜", hint: "انقري لفتح الرسالة 💌", message: "رسالة حب ليكي بمناسبة العيد..." },
                 finalScene: { scene1: "كل الأيام معاكي عيد…<br />و اليوم أجمل عيد", scene2: "كل سنة و إنتِ عيدي…", scene2b: "يا أجمل و أحلى و أغلى حاجة.", scene3: "مش مجرد حب…", scene3b: "أنتِ الأمان، والونس، والبيت، والعيد.", scene6: "لو الأيام اتشقلبت... ولو الدنيا وقفت ضدنا", scene7: "أنا ثابت…", scene8: "علشان اخترتك بقلب كامل في كل عيد.", infinity: "حبي ليكِ لا نهائي", back: "الرجوع للرئيسية", thanks: "كل عيد و انتِ بألف صحة و سعادة 💖" }
             },
             en: {
@@ -1591,11 +1591,11 @@
             };
 
             return (
-                <section className="pt-48 pb-24 px-4 relative z-10 overflow-hidden flex flex-col items-center">
+                <section className="pt-64 pb-24 px-4 relative z-10 overflow-hidden flex flex-col items-center">
                     <div className="max-w-4xl mx-auto text-center relative">
                         <h2 className="text-3xl md:text-5xl font-bold mb-12 text-shimmer">مفاجأة العيد! 🎁💫</h2>
                         
-                        <div className={`relative w-48 h-48 sm:w-64 sm:h-64 cursor-pointer transition-all duration-700 ${isOpen ? 'scale-110 mb-48 sm:mb-64' : 'hover:scale-105'}`} onClick={handleOpen}>
+                        <div className={`relative w-48 h-48 sm:w-64 sm:h-64 cursor-pointer transition-all duration-700 ${isOpen ? 'scale-110 mb-64 sm:mb-80' : 'hover:scale-105'}`} onClick={handleOpen}>
                             {/* Gift Lid */}
                             <div className={`absolute -top-4 left-0 w-full h-12 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg shadow-2xl z-20 transition-all duration-1000 ease-out origin-top border-2 border-white/20
                                 ${isOpen ? '-translate-y-32 -rotate-12 opacity-0' : 'translate-y-0 rotate-0 opacity-100'}`}>
@@ -1618,7 +1618,7 @@
 
                             {/* Revelation Content */}
                             <div className={`absolute left-1/2 -translate-x-1/2 w-[280px] xs:w-[320px] sm:w-[500px] transition-all duration-1000 delay-300 transform
-                                ${isOpen ? 'translate-y-[-105%] opacity-100 scale-100' : 'translate-y-0 opacity-0 scale-50 pointer-events-none'}`}>
+                                ${isOpen ? 'translate-y-[-95%] opacity-100 scale-100' : 'translate-y-0 opacity-0 scale-50 pointer-events-none'}`}>
                                 <div className="bg-black/80 backdrop-blur-3xl p-8 sm:p-12 rounded-[2.5rem] border border-white/20 shadow-[0_0_50px_rgba(196,13,116,0.5)] relative">
                                     <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[rgb(196,13,116)] px-6 py-2 rounded-full text-white font-bold text-sm shadow-xl">
                                         خاص جداً 💜
@@ -1861,7 +1861,7 @@
                         <div className="relative z-10">
                             {/* Sticky Navigation */}
                             <nav className="fixed top-0 left-0 right-0 z-40 bg-black/60 backdrop-blur-xl border-b border-white/10 px-4 py-2 md:py-3 flex flex-col items-center gap-1 md:gap-2 transition-all">
-                                <div className="text-xl md:text-2xl font-bold font-script text-[rgb(196,13,116)]">Ahmed & Gee</div>
+                                <div className="text-lg xs:text-xl md:text-2xl font-bold font-script text-[rgb(196,13,116)] whitespace-nowrap">Ahmed & Gee</div>
                                 <div className="flex gap-4 text-[9px] xs:text-[11px] sm:text-xs md:text-sm tracking-tight sm:gap-6 uppercase font-premium">
                                     <a href="#timeline" className="hover:text-[rgb(196,13,116)] transition-colors whitespace-nowrap">{t.nav.memories}</a>
                                     <a href="#reasons" className="hover:text-[rgb(196,13,116)] transition-colors">{t.nav.why}</a>
@@ -1899,7 +1899,7 @@
                                 <section className="min-h-screen flex flex-col items-center justify-center text-center p-4 relative overflow-hidden">
                                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#830b9d]/20 to-transparent -z-10"></div>
 
-                                    <h1 className="text-6xl md:text-8xl font-serif font-black mb-6 leading-tight drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] text-white">
+                                    <h1 className="text-4xl xs:text-5xl sm:text-7xl md:text-8xl font-serif font-black mb-6 leading-tight drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] text-white whitespace-nowrap">
                                         Ahmed & Gee
                                     </h1>
                                     <p className="text-pink-100 text-lg mb-4 font-bold">إلى حبيبتي Gee بمناسبة العيد 🎁</p>
